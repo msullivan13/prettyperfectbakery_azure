@@ -1,0 +1,595 @@
+@charset "UTF-8"; 
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(231, 235, 0, 0.15);
+    color: #5c3400;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#title_of_page {
+    color: #FFFAFA;
+    background-color: rgb(92, 34, 0);
+    font: bold 2.5em times, serif;
+}
+
+.name {
+color: #ff0a2fe0;
+}
+
+
+.main_nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(124, 47, 2, 0.836);
+    margin: 0;
+    border: 3px solid #3d2400;
+    border-radius: 25px;   
+}
+
+.main_nav a{
+    color: #ffcc00;
+    padding: 60px 40px;
+    text-decoration: none;
+    height: 20em;
+  font-size: 25px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+
+.main_nav a:hover {
+    background-color: white;
+    color: rgb(235, 212, 0);
+}
+
+/*
+li.logo {
+    top: 30px;
+    left: 50px;
+    width: 150px;  
+    height: auto;
+}
+*/
+
+.hero_image {
+    background-image: url(images/photos_changed/bakery_two.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+  height: 20em;
+}
+
+
+.hero_header {
+color: white;
+text-align: center;
+padding: 50px 50px 50px 50px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 100px;
+}
+
+.button {
+background-color:#d8475d;
+border: none;
+color: white;
+display: inline-block;
+font-size: 18px;
+margin: 6px 3px;
+padding: 20px 40px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+}
+
+.button a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none; 
+}
+
+
+
+#index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+'image image iamge'
+    'welcome    welcome     welcome'
+'fact1   fact1 fact1'
+'fact3 fact3 fact3'
+'product1   product2    product3'
+'fact2 fact2 fact2'
+'review review review'
+    ;
+justify-content: center;
+margin: 0 auto;
+}
+
+
+#welcome {
+    grid-area: welcome;
+    object-fit: cover;
+    text-align: center;
+    margin: 0px 15px 0px 30px;
+    padding: 60px 0px 60px 0px;
+}
+
+
+#fact1 {
+    grid-area: fact1;
+    object-fit: cover;
+    text-align: center;
+    padding: 0px 60px 0px 60px;
+}
+
+#fact2 {
+    grid-area: fact2;
+    object-fit: cover;
+    text-align: center;
+    padding: 0px 60px 0px 60px;
+}
+
+#fact3 {
+    grid-area: fact3;
+    object-fit: cover;
+     text-align: center; 
+    padding: 0px 60px 0px 60px;
+}
+
+#review {
+    grid-area: review;
+    object-fit: cover; 
+    margin: 0px 15px 0px 30px;
+    padding: 60px 0px 60px 0px;
+}
+
+#product1 {
+    grid-area: product1;
+    margin: 40px;
+    object-fit: cover;
+    text-align: center;
+    padding: 120px 0px 0px 0px;
+}
+
+
+#product2 {
+    grid-area: product2;
+    margin: 40px;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+
+#product3 {
+    grid-area: product3;
+    margin: 40px;
+    object-fit: cover;
+    text-align: center;
+    padding: 120px 0px 0px 0px;
+}
+
+
+img:hover {
+    transform: scale(1.5);
+}
+
+#menu_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+'image image iamge'
+    'breads breads breads'
+    'item1  item2   item3'
+'desserts desserts desserts'
+'item4 item5 item6'
+'other other other'
+'item7 item8 item9';
+justify-content: center;
+margin: 0 auto;;
+}
+
+#menu {
+    object-fit: cover;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+/*padding: 60px 0px 60px 0px;*/
+
+#breads {
+    grid-area: breads;
+    object-fit: cover;
+    margin: 0px 15px 0px 30px;
+}
+/*padding: 60px 0px 60px 0px;*/
+
+#item1 {
+    grid-area: item1;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+#item2 {
+    grid-area: item2;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+#item3 {
+    grid-area: item3;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+#desserts {
+    grid-area: desserts;
+    object-fit: cover; 
+    margin: 0px 15px 0px 30px;
+}
+/*padding: 60px 0px 60px 0px;*/
+
+#item4 {
+    grid-area: item4;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+
+#item5 {
+    grid-area: item5;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+
+#item6 {
+    grid-area: item6;
+    object-fit: cover;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+}
+
+#other {
+    grid-area: other;
+    object-fit: cover; 
+    margin: 0px 15px 0px 30px;
+}
+/*padding: 60px 0px 60px 0px;*/
+
+#item7 {
+    grid-area: item7;
+    object-fit: cover;
+    text-align: center;
+}
+
+#item8 {
+    grid-area: item8;
+    object-fit: cover;
+    text-align: center;
+}
+
+#item9 {
+    grid-area: item9;
+    object-fit: cover;
+    text-align: center;
+}
+
+.drinks {
+text-align: center;
+padding: 5px 20px;
+margin: 10px 20px;
+}
+
+#about_us {
+    padding: 60px 0px 0px 0px; 
+}
+
+#contact_us {
+    padding: 60px 0px 0px 30px; 
+}
+
+.titles_padding {
+    padding: 40px 0px 0px 0px; 
+}
+
+#footer {
+    background-color: rgba(124, 47, 2, 0.836);
+    color: #ffcc00;
+    padding: 30px 0px 30px 0px;    
+    text-align: center;
+    border: 3px solid #3d2400;
+    border-radius: 5px;   
+}
+
+.full_image {
+    object-fit: cover;
+    text-align: center;
+    min-width: 1000px;
+    padding: 30px 0px 30px 0px;
+}
+
+img {
+   max-width: 100%;
+    height: auto;
+}
+
+
+
+/*-----------------------------MEDIA QUERY-------------------------------*/
+
+
+
+
+/*-----------------------------MEDIA QUERY-------------------------------*/
+
+@media (min-width: 600px) and (min-height: 900px){
+
+     /*tablet size*/
+    
+    
+    .main_nav a{
+        padding: 40px 10px;
+        height: auto;
+      font-size: 25px;  
+    }
+    
+    /*
+    li.logo {
+        top: 10px;
+        left: 20px;
+    }
+    
+    FOR WHEN I ADD LOGO BACK IN:
+     <li class="logo"> <img src="../cookie_logo.png" alt="cookie with a bow"></li>
+    
+    #logo {
+        width: 150px;
+        height: auto;
+    }
+    */
+    img {
+        max-width: 50%;
+     }  
+  
+
+#menu {
+    object-fit: cover;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+
+#breads {
+    grid-area: breads;
+    object-fit: cover;
+    margin: 0px 15px 0px 30px;
+}
+
+#desserts {
+    grid-area: desserts;
+    object-fit: cover; 
+    margin: 0px 15px 0px 30px;
+}
+
+#other {
+    grid-area: other;
+    object-fit: cover; 
+    margin: 0px 15px 0px 30px;
+}
+
+    .hero_image {
+     height: 200px;
+      width: auto;
+    }
+    
+    
+    .hero_header {
+    padding: 70px 0px 50px 0px;
+    font-size: 30px;
+    height: auto; 
+    }
+    
+    
+    #index_grid {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #fbfcdc;
+    }
+    
+    p {
+        font-size: 1em; 
+      }
+      
+    #welcome {
+    
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+        overflow-wrap: break-word;
+    }
+    
+    
+    #fact1 {
+        grid-area: fact1;
+        object-fit: cover;
+        text-align: center;
+    
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    #fact2 {
+        grid-area: fact2;
+        object-fit: cover;
+        text-align: center;
+    
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    #fact3 {
+        grid-area: fact3;
+        object-fit: cover;
+         text-align: center; 
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    #review {
+        grid-area: review;
+        object-fit: cover; 
+    
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    
+    .backup_image {
+        margin: 0px 30px 0px 30px;
+    }
+    
+    .move {
+        margin: 0px 30px 0px 30px;
+    }
+    
+    /*
+    .move_food_right {
+        margin: 0px 20px 0px 0px;
+    }
+    
+    .move_food_left {
+        margin: 0px 0px 0px 20px;
+    }
+    */
+    
+    #about_us {
+        padding: 60px 30px 0px 30px; 
+    }
+    
+    .full_image {
+        min-width: 500px;
+    }
+      }
+    
+    
+    /*-----------------------------MEDIA QUERY-------------------------------*/
+     
+    @media only screen and (min-width: 480px){
+ body {
+          font-size: 14px;
+        }
+     
+    .main_nav a{
+        padding: 70px 10px;
+        height: auto;
+      font-size: 25px;  
+    }
+
+    .hero_image {
+     height: 200px;
+      width: auto;
+    
+    }
+    
+  .hero_header {
+    padding: 70px 0px 50px 0px;
+    font-size: 30px;
+    height: auto; 
+    } 
+
+    
+    #index_grid {
+        width: auto;
+        box-sizing: border-box;
+        padding: 16px;
+        box-sizing: border-box;
+        background-color: #fbfcdc;
+    }
+    
+    p {
+        font-size: 1em; /* Adjust font size to fit small screens*/
+      }
+      
+    #welcome {
+        margin: 0px 50px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    
+    #fact1 {
+        grid-area: fact1;
+        object-fit: cover;
+        text-align: center;
+        margin: 0px 50px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+ 
+    #fact2 {
+        grid-area: fact2;
+        object-fit: cover;
+        text-align: center;
+        margin: 0px 50px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+       
+    #fact3 {
+        grid-area: fact3;
+        object-fit: cover;
+         text-align: center; 
+         margin: 0px 50px 0px 80px;
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    }
+    
+    #review {
+        grid-area: review;
+        object-fit: cover; 
+        margin: 0px 50px 0px 50px;
+        padding: 10px 0px 10px 0px;
+        font-size: 15px;
+    } */
+    
+    
+    .backup_image {
+        margin: 0px 30px 0px 30px;
+    }
+    
+    .move {
+        margin: 0px 30px 0px 30px;
+    } 
+    
+   
+    .move_food_right {
+        margin: 0px 20px 0px 0px;
+    }
+    
+    .move_food_left {
+        margin: 0px 0px 0px 20px;
+    }
+   
+    
+    #about_us {
+        padding: 60px 30px 0px 30px; 
+    }
+
+    .full_image {
+        min-width: 130px;
+    }
+      }
